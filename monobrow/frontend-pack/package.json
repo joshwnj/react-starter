@@ -1,0 +1,27 @@
+{
+  "name": "frontend-pack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "monobrow -c index.js",
+    "test": "npm run build"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "classnames": "^2.2.5",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.8.1",
+    "redux-thunk": "^2.2.0",
+    "xhr": "^2.4.0"
+  },
+  "keywords": [],
+  "author": "joshwnj",
+  "license": "MIT"
+}
