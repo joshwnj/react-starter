@@ -1,8 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
 
+import Sample from './containers/Sample/state'
+
 render(
-  <div>hello world</div>,
+  <Sample />,
   document.getElementById('root')
 )
 
