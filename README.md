@@ -19,3 +19,4 @@ open index.html
 ## Tutorials
 
 1. [Create a component](https://github.com/joshwnj/react-starter/blob/master/tutorials/1.md)
+1. [Interactive components](https://github.com/joshwnj/react-starter/blob/master/tutorials/2.md)
