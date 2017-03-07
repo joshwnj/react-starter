@@ -9,8 +9,11 @@ module.exports = function SampleForm (props) {
   const canSubmit = props.text && props.isChecked
 
   return <form>
-    <input type='text' value={props.text} />
-    <input type='checkbox' checked={props.isChecked} />
-    <SubmitButton canSubmit={canSubmit} isSubmitting={props.isSubmitting} />
+    <input type='text' value={props.text} onChange={props.onTextChange} />
+    <input type='checkbox' checked={props.isChecked} onChange={props.onCheckboxChange} />
+    <SubmitButton
+      canSubmit={canSubmit}
+      isSubmitting={props.isSubmitting}
+      onClick={props.onSubmit} />
   </form>
 }

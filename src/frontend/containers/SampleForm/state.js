@@ -42,10 +42,42 @@ module.exports = React.createClass({
   displayName: 'State',
 
   getInitialState: function () {
-    return presets.checkboxOnly
+    return presets.init
+  },
+
+  onTextChange: function (e) {
+    const value = e.target.value
+
+    this.setState({
+      text: value
+    })
+  },
+
+  onCheckboxChange: function (e) {
+    this.setState({
+      isChecked: e.target.checked
+    })
+  },
+
+  onSubmit: function (e) {
+    e.preventDefault()
+
+    this.setState({
+      isSubmitting: true
+    })
+
+    setTimeout(() => {
+      this.setState({
+        isSubmitting: false
+      })
+    }, 2000)
   },
 
   render: function () {
-    return <Component {...this.state} />
+    return <Component {...this.state}
+      onTextChange={this.onTextChange}
+      onCheckboxChange={this.onCheckboxChange}
+      onSubmit={this.onSubmit}
+      />
   }
 })
