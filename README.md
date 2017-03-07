@@ -1,6 +1,6 @@
 # react-starter
 
-A small starter kit to learn some things about react.
+In this series of tutorials we're going to be starting with a pretty blank slate, and gradaully adding new things to build a UI with react.  Hopefully by the time it comes to add the kitchen sink, you'll have a good idea of why we need it :)
 
 ## Install
 
