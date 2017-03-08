@@ -9,11 +9,9 @@ module.exports = function Sample (props) {
     return <div style={{color: 'red'}}>{props.error.toString()}</div>
   }
 
-  if (!props.result) {
-    return <div>Nothing loaded</div>
+  if (props.result) {
+    return <div>{props.result.message}</div>
   }
 
-  return <div>
-    <div>{props.result.message}</div>
-  </div>
+  return <div>Nothing loaded</div>
 }
