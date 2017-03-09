@@ -23,5 +23,6 @@
     "babelify": "^7.3.0"
   },
   "dependencies": {
+    "cmz": "^2.0.1"
   }
 }

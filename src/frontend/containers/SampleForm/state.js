@@ -42,7 +42,7 @@ module.exports = React.createClass({
   displayName: 'State',
 
   getInitialState: function () {
-    return presets.init
+    return presets.withValues
   },
 
   onTextChange: function (e) {
