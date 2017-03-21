@@ -47,7 +47,7 @@ module.exports = React.createClass({
 
   onTextChange: function (e) {
     const value = e.target.value
-    if (!/^[0-9]+$/.test(value)) { return }
+    if (!/^[0-9]*$/.test(value)) { return }
 
     this.setState({
       text: value
